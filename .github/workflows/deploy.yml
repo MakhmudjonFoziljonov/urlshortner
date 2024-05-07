@@ -18,6 +18,6 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           script: >
             cd ${{ secrets.PROJECT_PATH }} 
-            && git pull 
             && source venv/bin/activate
+            && git pull 
             && python manage.py runserver
