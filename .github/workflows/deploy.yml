@@ -19,5 +19,5 @@ jobs:
           script: >
             cd ${{ secrets.PROJECT_PATH }} 
             && git pull 
-            && . venv/bin/activate
+            && source venv/bin/activate
             && python manage.py runserver
