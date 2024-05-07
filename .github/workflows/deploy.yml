@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    if: github.ref == 'refs/heads/deploy'
+    if: github.ref == 'refs/heads/.github'
     runs-on: [ ubuntu-latest ]
     steps:
       - uses: actions/checkout@v1
