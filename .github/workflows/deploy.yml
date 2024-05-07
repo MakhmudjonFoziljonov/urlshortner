@@ -1,12 +1,12 @@
 on:
   push:
-    branches: [ deploy ]
+    branches: [ main ]
   pull_request:
-    branches: [ deploy ]
+    branches: [ main ]
 
 jobs:
   deploy:
-    if: github.ref == 'refs/heads/.github'
+    if: github.ref == 'refs/heads/main'
     runs-on: [ ubuntu-latest ]
     steps:
       - uses: actions/checkout@v1
