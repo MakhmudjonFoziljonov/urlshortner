@@ -20,4 +20,5 @@ jobs:
             cd ${{ secrets.PROJECT_PATH }} 
             && source venv/bin/activate
             && git pull 
-            && python manage.py runserver
+            && python manage.py runserver 0.0.0.0:8000 --noreload
+               
